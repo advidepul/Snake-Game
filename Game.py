@@ -35,4 +35,7 @@ class Game:
                 elif event.key == pygame.K_q:
                     print("Quit Game")
                     return restart == False
+    def wallCollision(self, x1, y1, length, weight):
+	if x1 <= -1 or x1 >= weight or y1 <= -1 or y1 >= length:
+	    return True
 
